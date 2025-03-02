@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="jsbucket",
-    version="1.0.0",
+    version="1.0.1",
     author="Mortaza Behesti Al Saeed",
     author_email="saeed.ctf@gmail.com",
     description="A tool to discover S3 buckets from subdomains by analyzing JavaScript files.",

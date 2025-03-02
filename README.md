@@ -154,7 +154,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License 📜
 
-This project is licensed under the [MIT License](https://github.com/saeed0xf/jsbucket/blob/main/LICENSE). See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/saeed0xf/jsbucket/blob/main/LICENSE) file for details.
 
 ---
 
