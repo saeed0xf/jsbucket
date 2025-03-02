@@ -1,0 +1,22 @@
+# Distribution and build artifacts
+/dist/
+/*.egg-info/
+
+# PyPI configuration file
+/.pypirc
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment files
+venv/
+env/

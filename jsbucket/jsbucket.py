@@ -154,7 +154,7 @@ def analyze_subdomain(subdomain, base_domain, results, lock, progress_bar):
         results.append(result_entry)
         
 # main function
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Analyze Javascript files from given subdomain(s) for S3 buckets.")
     parser.add_argument("-u", "--subdomain", help="single subdomain")
     parser.add_argument("-d", "--domain", required=True, help="base/root domain")
@@ -227,3 +227,6 @@ if __name__ == "__main__":
         if progress_bar:
             progress_bar.close()
         exit(1)
+        
+if __name__ == "__main__":
+    main()
