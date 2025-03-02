@@ -144,7 +144,7 @@ Alert: S3 Bucket(s) found on subdomain https://sub.example.com!
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 ---
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the [MIT License](https://github.com/saeed0xf/jsbucket/blob/main/LICENSE). See the LICENSE file for details.
 ---
 
 ## Contact 💻
