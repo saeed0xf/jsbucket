@@ -143,7 +143,6 @@ Alert: S3 Bucket(s) found on subdomain https://sub.example.com!
 3. **Threads**: Increase the `-t` value for faster analysis, but be cautious with high thread counts to avoid overwhelming the network or server.
 
 ---
-<<<<<<< HEAD
 
 ## Contributing 🤝
 
@@ -156,27 +155,13 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License 📜
 
 This project is licensed under the [MIT License](https://github.com/saeed0xf/jsbucket/blob/main/LICENSE). See the `LICENSE` file for details.
-=======
-## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
----
-## License
-This project is licensed under the [MIT License](https://github.com/saeed0xf/jsbucket/blob/main/LICENSE). See the LICENSE file for details.
->>>>>>> e1deb308fdd2381725d6cc774ff5aefc2d05d87b
 
 ---
 
 ## Contact 💻
 
 For questions, suggestions, or feedback, feel free to reach out:
-<<<<<<< HEAD
 
-- Twitter/X: [@Saeed0x1](https://x.com/saeed0x1)
+- Twitter/X: [Saeed0x1](https://x.com/saeed0x1)
 - LinkedIn: [Saeed0x1](https://www.linkedin.com/in/saeed0x1)
 - GitHub: [saeed0xf](https://github.com/saeed0xf)
-=======
-- Twitter/X: [Saeed0x1](https://x.com/saeed0x1)
-- Linkedin: [Saeed0x1](https://www.linkedin.com/in/saeed0x1) 
-- GitHub: [saeed0xf](https://github.com/saeed0xf)
->>>>>>> e1deb308fdd2381725d6cc774ff5aefc2d05d87b
