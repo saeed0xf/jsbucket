@@ -138,13 +138,13 @@ Alert: S3 Bucket(s) found on subdomain https://sub.example.com!
 3. **Threads**: Increase the `-t` value for faster analysis, but be cautious with high thread counts to avoid overwhelming the network or server.
 
 ---
-
 ## Contributing
-
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
 ---
 ## License
 This project is licensed under the [MIT License](https://github.com/saeed0xf/jsbucket/blob/main/LICENSE). See the LICENSE file for details.
+
 ---
 
 ## Contact 💻
