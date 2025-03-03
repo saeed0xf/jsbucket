@@ -41,7 +41,6 @@ def extract_js_urls(html_content, base_url):
         console.print(f"Error extracting JavaScript URLs: {e}", style=error_style)
         return []
 
-
 # extract S3 buckets
 def extract_s3_buckets(content):
     try:
@@ -86,7 +85,7 @@ def format_json_with_colors(data):
     return "{\n" + ",\n".join(formatted_output) + "\n}"
 
 # analyze a single subdomain
-def analyze_subdomain(subdomain, base_domain, results, lock, progress_bar):
+def analyze_subdomain(subdomain, base_domain, results, lock, progress_bar, args):  # Add `args` as a parameter
     result_entry = {"subdomain": subdomain, "s3_buckets": []}
 
     protocols = ["https://", "http://"]
@@ -96,7 +95,7 @@ def analyze_subdomain(subdomain, base_domain, results, lock, progress_bar):
     if any(subdomain.startswith(protocol) for protocol in protocols):
         full_url = subdomain
         try:
-            response = requests.get(full_url, timeout=args.timeout, verify=True)
+            response = requests.get(full_url, timeout=args.timeout, verify=True)  # Use `args.timeout`
             response.raise_for_status()
             html_content = response.content
             successful_protocol = full_url.split("://")[0] + "://"
@@ -106,7 +105,7 @@ def analyze_subdomain(subdomain, base_domain, results, lock, progress_bar):
         for protocol in protocols:
             full_url = f"{protocol}{subdomain}"
             try:
-                response = requests.get(full_url, timeout=args.timeout, verify=True)
+                response = requests.get(full_url, timeout=args.timeout, verify=True)  # Use `args.timeout`
                 response.raise_for_status()
                 html_content = response.content
                 successful_protocol = protocol
@@ -152,7 +151,7 @@ def analyze_subdomain(subdomain, base_domain, results, lock, progress_bar):
     # Thread-safe update of results
     with lock:
         results.append(result_entry)
-        
+
 # main function
 def main():
     parser = argparse.ArgumentParser(description="Analyze Javascript files from given subdomain(s) for S3 buckets.")
@@ -191,7 +190,7 @@ def main():
 
     try:
         for subdomain in subdomains:
-            thread = threading.Thread(target=analyze_subdomain, args=(subdomain, args.domain, results, lock, progress_bar))
+            thread = threading.Thread(target=analyze_subdomain, args=(subdomain, args.domain, results, lock, progress_bar, args))  # Pass `args`
             threads.append(thread)
             thread.start()
 
@@ -227,6 +226,6 @@ def main():
         if progress_bar:
             progress_bar.close()
         exit(1)
-        
+
 if __name__ == "__main__":
     main()
